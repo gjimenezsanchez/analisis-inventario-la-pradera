@@ -13,3 +13,29 @@ La causa exacta aún no la conocemos; una hipótesis es la forma en que se regis
 ## Dashboard
 
 ![Dashboard del Caso 1](images/dashboard-caso-1.png.png)
+
+
+## Cómo está hecho
+
+1. **Excel y Power Query:** limpieza de las 5 tablas del dataset (12,134 registros) y creación de la tabla Calendario.
+2. **Power Pivot:** modelo en estrella con Productos al centro, relacionado por SKU, y exploración con tablas dinámicas para descartar hipótesis rápido.
+3. **SQL Server:** carga de las tablas, consultas de análisis y una vista (`vw_Inventario_Detalle`) que alimenta el dashboard.
+4. **Power BI:** modelo, medidas DAX y dashboard con 4 tarjetas y 2 gráficos.
+
+## Estructura del repositorio
+
+```
+├── images/
+│   └── dashboard-caso-1.png
+├── powerbi/
+│   ├── medidas_dax.md
+│   └── tema_la_pradera.json
+└── sql/
+    ├── 00_crear_tablas.sql
+    ├── 01_descomposicion_por_tipo.sql
+    ├── 02_exactitud_real.sql
+    ├── 03_negativos_por_sucursal.sql
+    ├── 04_compras_atrasadas.sql
+    ├── 05_lead_time_real_vs_diferencia.sql
+    └── 06_vista_inventario_detalle.sql
+```
