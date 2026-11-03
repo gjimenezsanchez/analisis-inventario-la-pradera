@@ -39,3 +39,11 @@ La causa exacta aún no la conocemos; una hipótesis es la forma en que se regis
     ├── 05_lead_time_real_vs_diferencia.sql
     └── 06_vista_inventario_detalle.sql
 ```
+
+
+## Límites del análisis
+
+- Los datos son ficticios, generados con IA para practicar; los resultados no describen una empresa real.
+- La diferencia de 20.32 % es neta: los registros con físico mayor y menor se compensan. Medida con valor absoluto, el error llega a 51.88 % del stock del sistema.
+- La causa de la diferencia no se conoce. El análisis muestra que no se concentra en un SKU, una sucursal ni una ubicación, pero no explica por qué ocurre.
+- El lead time real de los 5 proveedores se parece al % de diferencia (r = 0.833), pero con solo 5 proveedores es una pista, no una conclusión.
