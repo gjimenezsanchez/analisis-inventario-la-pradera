@@ -1,0 +1,10 @@
+{
+  "name": "La Pradera - Verde y gris",
+  "dataColors": ["#5BD08A", "#7D8984", "#2F7D52", "#9DB0A7", "#A8E6C0", "#4A5651", "#C9D6CF", "#1F5C3B"],
+  "background": "#25322D",
+  "foreground": "#EAF1ED",
+  "tableAccent": "#5BD08A",
+  "good": "#5BD08A",
+  "neutral": "#7D8984",
+  "bad": "#E07A5F"
+}
